@@ -5,6 +5,7 @@ import pandas as pd
 with open("all_models.pkl", "rb") as f:
     models, features = pickle.load(f)
 
+
 default_model = "Random Forest"
 
 def predict_selected(model_name, CreditScore, Age, Tenure, Balance,
@@ -26,6 +27,7 @@ def predict_selected(model_name, CreditScore, Age, Tenure, Balance,
     }
 
     X_input = pd.DataFrame([input_dict])
+
     model = models[model_name]
 
     try:
@@ -33,12 +35,7 @@ def predict_selected(model_name, CreditScore, Age, Tenure, Balance,
         if model_features is not None:
             X_input = X_input.reindex(columns=model_features, fill_value=0)
         else:
-            expected_features = getattr(model, "n_features_in_", len(features))
-            if X_input.shape[1] > expected_features:
-                X_input = X_input.iloc[:, :expected_features]
-            elif X_input.shape[1] < expected_features:
-                for i in range(expected_features - X_input.shape[1]):
-                    X_input[f"missing_{i}"] = 0
+            X_input = X_input.reindex(columns=features, fill_value=0)
     except Exception:
         X_input = X_input.reindex(columns=features, fill_value=0)
 
@@ -48,13 +45,13 @@ def predict_selected(model_name, CreditScore, Age, Tenure, Balance,
         pred_prob = None
     pred = model.predict(X_input)[0]
 
-    result_text = f" Prediction: {'Customer Exits' if pred == 1 else 'Customer Stays'}"
+    result_text = f"**Prediction:** {'🟥 Customer Exits' if pred == 1 else '🟩 Customer Stays'}"
     if pred_prob is not None:
-        result_text += f"\n Exit Probability: {pred_prob * 100:.2f}%"
+        result_text += f"\n**Exit Probability:** {pred_prob * 100:.2f}%"
     return result_text
 
 
-with gr.Blocks(theme=gr.themes.Soft(primary_hue="amber")) as app:  # Only primary_hue
+with gr.Blocks(theme=gr.themes.Soft(primary_hue="amber")) as app:
     gr.Markdown(
         """
         <h1 style='text-align:left; color:#d19a66;'>🏦 Customer Churn Prediction</h1>
@@ -62,7 +59,7 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="amber")) as app:  # Only primar
         Choose a model (Random Forest recommended), enter customer details, 
         and predict whether the customer will exit.
         </p>
-        """,
+        """
     )
 
     with gr.Row(equal_height=True):
@@ -99,7 +96,7 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="amber")) as app:  # Only primar
         <p style='text-align:left; color:#bfbfbf; font-size:0.9em;'>
         Developed by <b>AI Workforce</b> — Elegant Left Layout 🌗
         </p>
-        """,
+        """
     )
 
     app.load(
@@ -115,7 +112,7 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="amber")) as app:  # Only primar
                 box.style.height = '180px';
             }
         }
-        """,
+        """
     )
 
     predict_btn.click(
@@ -130,4 +127,3 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="amber")) as app:  # Only primar
 
 if __name__ == "__main__":
     app.launch()
-
