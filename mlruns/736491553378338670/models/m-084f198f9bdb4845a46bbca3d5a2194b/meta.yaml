@@ -1,0 +1,10 @@
+artifact_location: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/models/m-084f198f9bdb4845a46bbca3d5a2194b/artifacts
+creation_timestamp: 1761560955850
+experiment_id: '736491553378338670'
+last_updated_timestamp: 1761560977749
+model_id: m-084f198f9bdb4845a46bbca3d5a2194b
+model_type: null
+name: Random_Forest
+source_run_id: 3a02513bf5da465a8704fc385fa95974
+status: 2
+status_message: null

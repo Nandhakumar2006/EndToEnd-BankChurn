@@ -1,0 +1,10 @@
+artifact_location: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/models/m-150f4df731454a208391151b6873ec3f/artifacts
+creation_timestamp: 1761561028188
+experiment_id: '736491553378338670'
+last_updated_timestamp: 1761561034850
+model_id: m-150f4df731454a208391151b6873ec3f
+model_type: null
+name: SVM
+source_run_id: 45234531a81a4f6aa2b1e45a528e5492
+status: 2
+status_message: null

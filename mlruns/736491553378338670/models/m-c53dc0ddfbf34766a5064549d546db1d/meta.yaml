@@ -1,0 +1,10 @@
+artifact_location: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/models/m-c53dc0ddfbf34766a5064549d546db1d/artifacts
+creation_timestamp: 1761560978224
+experiment_id: '736491553378338670'
+last_updated_timestamp: 1761560984265
+model_id: m-c53dc0ddfbf34766a5064549d546db1d
+model_type: null
+name: XGBoost
+source_run_id: 4fa24b2cba35420eb774d092d6625bc4
+status: 2
+status_message: null

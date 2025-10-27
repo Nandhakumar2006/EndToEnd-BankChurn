@@ -1,0 +1,10 @@
+artifact_location: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/models/m-ac0790aa3b734baabf2855cf14fe2804/artifacts
+creation_timestamp: 1761561006201
+experiment_id: '736491553378338670'
+last_updated_timestamp: 1761561012007
+model_id: m-ac0790aa3b734baabf2855cf14fe2804
+model_type: null
+name: Decision_Tree
+source_run_id: 1b8295650af144219f3af731915e2665
+status: 2
+status_message: null

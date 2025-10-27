@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/62ed941e9d8f48b5969605587b88da11/artifacts
+end_time: 1761561005822
+entry_point_name: ''
+experiment_id: '736491553378338670'
+lifecycle_stage: active
+run_id: 62ed941e9d8f48b5969605587b88da11
+run_name: Logistic Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761560998708
+status: 3
+tags: []
+user_id: Nandhakumar

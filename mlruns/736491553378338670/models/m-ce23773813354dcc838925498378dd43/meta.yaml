@@ -1,0 +1,10 @@
+artifact_location: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/models/m-ce23773813354dcc838925498378dd43/artifacts
+creation_timestamp: 1761560999377
+experiment_id: '736491553378338670'
+last_updated_timestamp: 1761561005782
+model_id: m-ce23773813354dcc838925498378dd43
+model_type: null
+name: Logistic_Regression
+source_run_id: 62ed941e9d8f48b5969605587b88da11
+status: 2
+status_message: null

@@ -1,0 +1,10 @@
+artifact_location: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/models/m-7ab690bf308d49b5b14744cb0b80f9b3/artifacts
+creation_timestamp: 1761561035185
+experiment_id: '736491553378338670'
+last_updated_timestamp: 1761561041608
+model_id: m-7ab690bf308d49b5b14744cb0b80f9b3
+model_type: null
+name: KNN
+source_run_id: 3a653923e5b04db0b8d311b5ed6d2163
+status: 2
+status_message: null

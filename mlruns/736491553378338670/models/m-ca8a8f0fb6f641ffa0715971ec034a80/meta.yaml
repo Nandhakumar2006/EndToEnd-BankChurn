@@ -1,0 +1,10 @@
+artifact_location: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/models/m-ca8a8f0fb6f641ffa0715971ec034a80/artifacts
+creation_timestamp: 1761560992447
+experiment_id: '736491553378338670'
+last_updated_timestamp: 1761560998648
+model_id: m-ca8a8f0fb6f641ffa0715971ec034a80
+model_type: null
+name: Gradient_Boosting
+source_run_id: d967423dd2dd4e1c8aebb6b3bf83ac50
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/AI%20WORKFORCE/EndToEnd-churn/mlruns/736491553378338670/1b8295650af144219f3af731915e2665/artifacts
+end_time: 1761561012045
+entry_point_name: ''
+experiment_id: '736491553378338670'
+lifecycle_stage: active
+run_id: 1b8295650af144219f3af731915e2665
+run_name: Decision Tree
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761561005840
+status: 3
+tags: []
+user_id: Nandhakumar
