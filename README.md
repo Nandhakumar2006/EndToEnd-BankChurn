@@ -103,16 +103,9 @@ Run the App:
 python app.py
 
 
-or from within the notebook:
-
-import gradio as gr
-# interface = gr.Interface(...)
-# interface.launch()
-
-
 # Demo Link (Example):
 🔗 Live Gradio App
- (replace with your actual link)
+https://huggingface.co/spaces/nandha-01/MultipleModel-ChurnPredictor
 
 ## 🧩 Installation & Setup
 1️⃣ Clone the Repository
